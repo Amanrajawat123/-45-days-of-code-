@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, x, y, t, k;
+    cin>>n;
+    for(int i=1;i<=n;i++){
+        cin>>x>>y;
+        if(x>=y){
+         t=x-y;
+           cout<<t<<endl;
+        }
+        else if(x<y){
+           cout<<0<<endl;
+        }
+    }
+    return 0;
