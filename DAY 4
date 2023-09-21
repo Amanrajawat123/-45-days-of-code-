@@ -1,0 +1,50 @@
+code 1:beginner
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n,x,y,z;
+	cin>>n;
+	for(int i=1;i<=n;i++){
+	    cin>>x>>y;
+	    if(x>=y){
+	        cout<<y<<endl;
+	    }
+	    else if(x<y){
+	        cout<<x+(y-x)*2<<endl;
+	    }   
+	}
+	return 0;
+}
+
+code 2:Intermediate
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n,l,vla,vlb,final;
+	float vl1,vl2,v1,v2;
+	cin>>n;
+	for(int i=1;i<=n;i++){
+	    cin>>l>>v1>>v2;
+	   vl1=l/v1;
+	   vla=l/v1;
+	   if(vl1>vla){
+	       vla++;
+	   }
+       vl2=l/v2;
+	   vlb=l/v2;
+	   if(vl2>vlb){
+	       vlb++;
+	   }
+	   if(vla>vlb){
+	       final=vla-vlb-1;
+	       cout<<final<<endl;
+	   }
+	   else{
+	       cout<<-1;
+	   }
+	}
+	return 0;
+}
