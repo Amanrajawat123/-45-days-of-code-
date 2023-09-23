@@ -1,0 +1,47 @@
+CODE 1:BEGGINER
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	for(int i=1;i<=n;i++){
+	    int x;
+	    cin>>x;
+	    int q,r;
+	    q=x/4;
+	    r=x%4;
+	    if(r>0&&r<=x){
+	        q++;
+	    }
+	    cout<<q<<endl;
+	}
+	return 0;
+}
+
+CODE 2:
+
+#include <iostream>
+using namespace std;
+int main() {
+	int n,x,count;
+	string s;
+	cin>>n;
+	for(int i=1;i<=n;i++){
+	    count=0;
+	    cin>>x;
+	    cin>>s;
+	    for(int i=0;i<x;i++){
+	        if(s[i]=='0'||s[i]=='5'){
+	            count++;
+	        }
+	    }
+	    if(count>0){
+	        cout<<"Yes"<<endl;
+	    }
+	    else{
+	        cout<<"No"<<endl;
+	    }
+	}
+	return 0;
+}
