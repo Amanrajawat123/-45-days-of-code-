@@ -1,0 +1,38 @@
+Code 1:beginner
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	for(int i=1;i<=n;i++){
+	    int fo,fl;
+	    cin>>fo>>fl;
+	    if(fo<=fl*10){
+	        cout<<"NO"<<endl;
+	    }
+	    else if(fo>fl*10)
+	    {cout<<"YES"<<endl;}
+	}
+	return 0;
+}
+
+Code 2:Intermediate
+#include <iostream>
+using namespace std;
+
+int main() {
+	int pa, pb, pc, n;
+	cin>>n;
+	for(int i=1;i<=n;i++){
+	    cin>>pa>>pb>>pc;
+	    if(pa+pc>=pb){
+	        cout<<pa+pc<<endl;
+	    }
+	    else
+	    {
+	        cout<<pb<<endl;
+	    }
+	}
+	return 0;
+}
