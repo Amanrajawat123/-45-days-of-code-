@@ -1,0 +1,37 @@
+code 1:beginner
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	for(int i=1;i<=n;i++){
+	    int x, y;
+	    cin>>x>>y;
+	    cout<<(y-1)/x<<endl;
+	}
+	return 0;
+}
+
+
+Code 2:Intermediate
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	for(int i=1;i<=n;i++){
+	    int a, b, c, d, e, p, f;
+	    cin>>a>>b>>c>>d>>e>>p;
+	    f=p*(a+b+c+d+e);
+	    if(f<=120){
+	        cout<<"No"<<endl;
+	    }
+	    else{
+	        cout<<"Yes"<<endl;
+	    }
+	}
+	return 0;
+}
