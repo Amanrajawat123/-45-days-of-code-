@@ -1,0 +1,34 @@
+Code 1:beginner
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	for(int i=1;i<=n;i++){
+	    int x, y;
+	    cin>>x>>y;
+	    cout<<x/y<<endl;
+	}
+	return 0;
+}
+
+Code 2:Intermediate
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin>>n;
+    for(int i=1;i<=n;i++){
+        int a,b,c,d,e;
+        cin>>a>>b>>c>>d>>e;
+        if((a+c<=d&&b<=e)||(a+b<=d&&c<=e)||(b+c<=d&&a<=e)){
+            cout<<"YES"<<endl;
+        }
+        else{
+            cout<<"NO"<<endl;
+        }
+    }
+	return 0;
+}
