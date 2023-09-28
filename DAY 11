@@ -1,0 +1,19 @@
+Code 1:Beginner
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	for(int i=1;i<=n;i++){
+	    int r,o;
+	    cin>>r>>o;
+	    if((o*6*6)>=r) {
+	        cout<<"YES"<<endl;
+	    }
+	    else{
+	        cout<<"NO"<<endl;
+	    }
+	}
+	return 0;
+}
