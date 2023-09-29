@@ -18,3 +18,34 @@ int main() {
 	}
 	return 0;
 }
+
+code 2:Intermediate
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	for(int i=1;i<=n;i++){
+	    int x,y,l=0,b=0;
+	    cin>>x>>y;
+	    for(int i=1;;i++){
+	       if(i%2==0){
+	        b=b+i;
+	        if(b>y){
+	        cout<<"Limak"<<endl; 
+	        break;
+	            } 
+	        }
+	        else{
+	        l=l+i;
+	        if(l>x) {
+	        cout<<"Bob"<<endl;
+	        break;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
+
