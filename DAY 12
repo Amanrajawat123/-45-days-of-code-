@@ -1,0 +1,20 @@
+Code 1:Beginner
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	for(int i=1;i<=n;i++){
+	    int x, y, z,f;
+	    cin>>x>>y>>z;
+	    f=y/x;
+	    if(f>z){
+	        cout<<0<<endl;
+	    }
+	    else{
+	        cout<<z-f<<endl;
+	    }
+	}
+	return 0;
+}
