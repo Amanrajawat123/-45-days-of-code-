@@ -1,0 +1,21 @@
+Code 1:
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	for(int i=1;i<=n;i++){
+	    int a, b, x, y;
+	    cin>>a>>b>>x>>y;
+	    int k=a*b;
+	    int l=x*y;
+	    if(l>=k){
+	        cout<<"YES"<<endl;
+	    }
+	    else{
+	        cout<<"NO"<<endl;
+	    }
+	}
+	return 0;
+}
