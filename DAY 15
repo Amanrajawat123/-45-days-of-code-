@@ -1,0 +1,42 @@
+Code 1:Beginner
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin>>n;
+    for(int i=1;i<=n;i++){
+        int fu,fd,t;
+        cin>>t>>fu;
+        fd=t-fu;
+        if(fd>=fu){
+            cout<<t-fd<<endl;
+        }
+        else if(fu>=fd){
+            cout<<t-fu<<endl;
+        }
+    }
+	return 0;
+}
+
+Code 2:Intermediate
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	for(int i=1;i<=n;i++){
+	    int t,m=0;
+	    cin>>t;
+	    int a[t];
+	    for(int j=0;j<t;j++){
+	        cin>>a[j];
+	        if(a[j]>m){
+	            m=a[j];
+	        }
+	    }
+	    cout<<m<<endl;
+	}
+	return 0;
+}
