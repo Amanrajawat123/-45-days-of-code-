@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	for(int i=1;i<=n;i++){
+	    int pa,pb,qa,qb, max1=0,max2=0;
+	    cin>>pa>>pb>>qa>>qb;
+            if(pa>=pb){
+                max1=pa;
+            }
+            else{
+                max1=pb;
+            }
+            if(qa>=qb){
+                max2=qa;
+            }
+            else{
+                max2=qb;
+            }
+            if(max1>max2){
+                cout<<"Q"<<endl;
+            }
+            else if(max1<max2){
+                cout<<"P"<<endl;
+            }
+            else{
+                cout<<"TIE"<<endl;
+            }
+	}
+	return 0;
+}
