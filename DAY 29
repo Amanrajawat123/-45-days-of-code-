@@ -1,0 +1,58 @@
+Code:Beginner
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	for(int i=1;i<=n;i++){
+	    int a,b,c,x;
+	    cin>>a>>b>>c>>x;
+	    if(a+b>=x||b+c>=x||a+c>=x){
+	        cout<<"YES"<<endl;
+	    }
+	    else{
+	        cout<<"NO"<<endl;
+	    }
+	}
+	return 0;
+}
+
+Code:Intermediate
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	for(int i=1;i<=n;i++){
+	    int a[n], count=0;
+	    for(int j=0;j<5;j++){
+	        cin>>a[j];
+	    }
+	    for(int j=0;j<5;j++){
+	        if(a[j]==0){
+	            count++;
+	        }
+	    }
+	    if(count==5){
+	        cout<<"Beginner"<<endl;
+	    }
+	    else if(count==4){
+	        cout<<"Junior Developer"<<endl;
+	    }
+	    else if(count==3){
+	        cout<<"Middle Developer"<<endl;
+	    }
+	    else if(count==2){
+	        cout<<"Senior Developer"<<endl;
+	    }
+	    else if(count==1){
+	        cout<<"Hacker"<<endl;
+	    }
+	    else if(count==0){
+	        cout<<"Jeff Dean"<<endl;
+	    }
+	}
+	return 0;
+}
