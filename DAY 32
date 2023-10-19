@@ -1,0 +1,82 @@
+Code:Beginner
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	for(int i=1;i<=n;i++){
+	    int x,y,count=0;
+	    cin>>x>>y;
+	    int q[x];
+	    for(int j=0;j<x;j++){
+	       cin>>q[j];
+	       if(q[j]>=y){
+	           count++;
+	       }
+	    }
+	    cout<<count<<endl;
+	}
+	return 0;
+}
+
+Code:Intermediate
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int n;
+	cin>>n;
+	for(int i=0;i<n;i++){
+	    int a1,a2,a3,b1,b2,b3;
+	    cin>>a1>>a2>>a3>>b1>>b2>>b3;
+	    int ans,sol;
+	    if (a1>a2 && a1>a3){
+	        if (a2>a3){
+	            ans=a1*100+a2*10+a3;
+	        }else{
+	            ans=a1*100+a3*10+a2;
+	        }
+	    }else if(a2>a3){
+	        if(a1>a3){
+	            ans=a2*100+a1*10+a3;
+	        }else{
+	            ans=a2*100+a3*10+a1;
+	        }
+	    }else{
+	        if(a1>a2){
+	            ans=a3*100+a1*10+a2;
+	        }else{
+	           ans=a3*100+a2*10+a1;
+	        }
+	    }
+	    if (b1>b2 && b1>b3){
+	        if (b2>b3){
+	            sol=b1*100+b2*10+b3;
+	        }else{
+	            sol=b1*100+b3*10+b2;
+	        }
+	    }else if(b2>b3){
+	        if(b1>b3){
+	            sol=b2*100+b1*10+b3;
+	        }else{
+	            sol=b2*100+b3*10+b1;
+	        }
+	    }else{
+	        if(b1>b2){
+	            sol=b3*100+b1*10+b2;
+	        }else{
+	            sol=b3*100+b2*10+b1;
+	        }
+	    }
+	    if (ans>sol){
+	        cout<<"Alice"<<endl;
+	    }else if (ans==sol){
+	        cout<<"Tie"<<endl;
+	    }else{
+	        cout<<"Bob"<<endl;
+	    }
+	}
+	return 0;
+}
