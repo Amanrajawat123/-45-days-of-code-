@@ -1,0 +1,36 @@
+Code : Beginner
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	for(int i=1;i<=n;i++){
+	    int a,b,c,d;
+	    cin>>a>>b>>c>>d;
+	    if(a+c<b+d){
+	        cout<<"YES"<<endl;
+	    }
+	    else{
+	        cout<<"NO"<<endl;
+	    }
+	}
+	return 0;
+}
+
+Code:Intermediate
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin>>n;
+    for(int i=0;i<n;i++){
+        int a,b,c;
+        cin>>a>>b>>c;
+        int k;
+        k=2*(180+a);
+        cout<<k-(b+c)<<endl;
+    }
+	return 0;
+}
