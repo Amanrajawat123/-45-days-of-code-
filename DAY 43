@@ -1,0 +1,23 @@
+Code:Beginner
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	for(int i=1;i<=n;i++) {
+	    float on,di;
+	    cin>>on>>di;
+	    float k=on*90/100;
+	    if(k<di){
+	        cout<<"ONLINE"<<endl;
+	    }
+	    else if(k>di){
+	        cout<<"DINING"<<endl;
+	    }
+	    else{
+	        cout<<"EITHER"<<endl;
+	    }
+	}
+	return 0;
+}
